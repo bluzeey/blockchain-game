@@ -9,7 +9,7 @@ export function ClaimFarmer() {
     return (
         <Container maxW={"1200px"}>
             <Flex direction={"column"} alignItems={"center"} justifyContent={"center"} h={"50vh"}>
-                <Heading>Claim Farmer to start farming</Heading>
+                <Heading>Claim Reaper to start reaping</Heading>
                 <Box borderRadius={"8px"} overflow={"hidden"} my={10}>
                     <MediaRenderer
                         src={metadata?.image}
@@ -21,7 +21,7 @@ export function ClaimFarmer() {
                 <Web3Button
                     contractAddress={FARMER_ADDRESS}
                     action={(contract) => contract.erc1155.claim(0, 1)}
-                >Claim Farmer</Web3Button>
+                >Claim Reaper</Web3Button>
             </Flex>
         </Container>
     );

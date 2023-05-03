@@ -35,7 +35,7 @@ export const Equipped = (props: EquippedProps) => {
                             />
                         </Box>
                         <Stack spacing={1}>
-                            <Text fontSize={"2xl"} fontWeight={"bold"}>{nft.metadata.name}</Text>
+                            <Text fontSize={"2xl"} fontWeight={600}>{nft.metadata.name}</Text>
                             <Text>Equipped: {ethers.utils.formatUnits(claimableRewards[0], 0)}</Text>
                             <Web3Button
                                 contractAddress={STAKING_ADDRESS}

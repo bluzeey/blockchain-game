@@ -3,12 +3,12 @@ import { ConnectWallet } from "@thirdweb-dev/react";
 
 export default function NavBar() {
     return (
-        <Container maxW={"1200px"} py={4}>
+        <Container style={{background:"black"}} maxW={"1200px"} py={4}>
             <Flex direction={"row"} justifyContent={"space-between"}>
-                <Heading>Crypto Farm</Heading>
+                <Heading fontFamily={'cursive'} color='whiteAlpha.900'>Reaper's Harvest</Heading>
                 <Flex alignItems={"center"}>
-                    <Link href={"/"} mx={2}>Play</Link>
-                    <Link href={"/shop"} mx={2}>Shop</Link>
+                    <Link color='whiteAlpha.900' href={"/"} mx={2}>Play</Link>
+                    <Link color='whiteAlpha.900' href={"/shop"} mx={2}>Shop</Link>
                 </Flex>
                 <ConnectWallet/>
             </Flex>
